@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 内联HTML -->
+    <%= require('raw-loader!./meta.html') %>
+    <title>Document</title>
+    <!-- 内联JS -->
+    <script>
+      <%= require('raw-loader!babel-loader!../../node_modules/lib-flexible/flexible.js') %>
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
